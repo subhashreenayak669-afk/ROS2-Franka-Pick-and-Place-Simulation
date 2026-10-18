@@ -17,5 +17,12 @@ An autonomous, collision-free pick-and-place manipulation system using the 7-DOF
 
 ### Terminal 1: Launch RViz 2 & MoveIt 2 Controllers
 ```bash
+### Terminal 1: Launch RViz 2 & MoveIt 2 Controllers
+```bash
 ros2 launch moveit_resources_panda_moveit_config demo.launch.py
+```
+
+### Terminal 2: Run Pick-and-Place Manipulation Pipeline
+```bash
 python3 add_scene.py && sleep 1 && python3 moveit_cartesian_task.py
+```
